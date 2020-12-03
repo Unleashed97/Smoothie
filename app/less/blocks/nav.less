@@ -1,0 +1,41 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 900px;
+    height: 60px;
+
+    &__link{
+        margin-right: 30px;
+        text-decoration: none;
+        color: #433840;
+
+        transition: color .2s linear;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:hover{
+            color: #FEA3AC;
+        }
+    }
+
+    &__logo{
+        text-align: center;
+    }
+
+    &__suptitle{
+        font-family: 'Waiting for the Sunrise', cursive;
+        font-size: 18px;
+        font-weight: 300;
+        color: @gray;
+    }
+
+    &__title{
+        font-size: 30;
+        font-weight: 700;
+        color: @pink;
+        letter-spacing: 10px;
+    }
+}

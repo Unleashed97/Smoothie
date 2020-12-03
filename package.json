@@ -1,0 +1,39 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.0.4",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "postcss": "^8.1.10",
+    "postcss-less": "^4.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unleashed97/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Unleashed97/test/issues"
+  },
+  "homepage": "https://github.com/Unleashed97/test#readme",
+  "description": ""
+}

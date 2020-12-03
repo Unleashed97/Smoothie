@@ -1,0 +1,30 @@
+.services{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+    background: url('../images/bg/services.jpg') center no-repeat;
+
+    &__col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item{
+        max-width: 330px;
+        margin-bottom: 80px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-title{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__item-text{
+        font-size: 15px;
+        color: @gray;
+    }
+}
