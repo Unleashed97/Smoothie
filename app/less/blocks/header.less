@@ -3,5 +3,44 @@
     &__inner{
         display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 60px;
+
+        
+    }
+
+    &__logo{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    &.active{
+        height: 100vh;
+        background-color: #fea3ac;
+        margin: 0;
+        position: relative;
+
+        .header__logo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .header__inner{
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+    }
+
+    @media (max-width: @laptop){
+        &__logo{
+            left: 0;
+            transform: translateX(0);
+        }
     }
 }

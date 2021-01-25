@@ -1,2 +1,2 @@
-alert('main');
-let a = 5;
+'use strict';
+

@@ -7,6 +7,11 @@
     &__col{
         display: flex;
         flex-direction: column;
+        margin-right: 10px;
+
+        &:last-child{
+            margin-right: 0;
+        }
     }
 
     &__item{
@@ -20,6 +25,7 @@
 
     &__item-title{
         font-size: 30px;
+        font-weight: 400;
         margin-bottom: 10px;
     }
 
@@ -27,4 +33,57 @@
         font-size: 15px;
         color: @gray;
     }
+
+    // rows
+    // display: flex;
+    // flex-direction: column;
+    // margin: 70px 0;
+    // background: url('../images/bg/services.jpg') center no-repeat;
+
+    // &__row{
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+
+    // &__item{
+    //     max-width: 330px;
+    //     margin-bottom: 80px;
+    //     height: auto;
+
+    //     &:last-child{
+    //         margin-bottom: 0;
+    //     }
+    // }
+
+    // &__item-title{
+    //     font-size: 30px;
+    //     font-weight: 400;
+    //     margin-bottom: 10px;
+    // }
+
+    // &__item-text{
+    //     font-size: 15px;
+    //     color: @gray;
+    // }
+
+    // MEDIA
+    @media (max-width: @sm){
+        &{
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &__col{
+                margin-bottom: 40px;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+
+            &__item{
+                margin-bottom: 40px;
+            }
+        }
+    }
+
 }

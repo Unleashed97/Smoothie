@@ -1,39 +1,55 @@
 // vars
 @import "blocks/vars";
 
-body{
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: @black;
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: @black;
 }
 
-
-*, *::before, *::after{
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.container{
-    max-width: 1165px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
+.container {
+  max-width: 1165px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-p{
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+no-scroll{
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
 }
 
 // Blocks
 @import "blocks/fonts";
 @import "blocks/header";
 @import "blocks/nav";
+@import "blocks/burger";
 @import "blocks/section";
 @import "blocks/bg-block";
 @import "blocks/services";
 @import "blocks/stat";
 @import "blocks/team";
+@import "blocks/social";
 @import "blocks/footer";

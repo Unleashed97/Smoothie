@@ -59,6 +59,7 @@ const scripts = () => {
     return src([ 'app/js/**/*.js' ], { base: 'app' })
     .pipe(concat('script.min.js'))
     .pipe(uglify())
+    .pipe(dest('app/js/'))
     .pipe(dest('dist/js/'))
     .pipe(sync.stream())
 }

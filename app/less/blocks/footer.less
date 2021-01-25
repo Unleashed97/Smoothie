@@ -4,6 +4,7 @@
 
     &__inner{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 62px 0;
     }
@@ -64,18 +65,39 @@
 
     &__copy-inner{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         color: @white;
         font-size: 15px;
     }
 
-    &__copy-socials{
-        .fab{
-            margin-right: 10px;
+    // MEDIA
+    @media (max-width: @tablet){
+        &__inner{
+            justify-content: center;
+        }
+
+        &__col{
+            width: 100%;
+            max-width: 400px;
+            // text-align: center;
+            justify-content: center;
+            margin-bottom: 40px;
 
             &:last-child{
-                margin-right: 0;
+                margin-bottom: 0;
             }
+        }
+
+        &__copy-inner{
+            width: 100%;
+            max-width: 400px;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        &__copy-text{
+            margin-bottom: 10px;
         }
     }
 }

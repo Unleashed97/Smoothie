@@ -20,16 +20,22 @@
                         <a class="nav__link" href="#">About</a>
                         <a class="nav__link" href="#">Blog</a>
                     </div>
-                    <div class="nav__logo">
-                        <div class="nav__suptitle">Fresh & Natural</div>
-                        <div class="nav__title">Smoothie</div>
-                    </div>
                     <div class="nav__right">
                         <a class="nav__link" href="#">Menu</a>
                         <a class="nav__link" href="#">Shop</a>
                         <a class="nav__link" href="#">Contact</a>
                     </div>
                 </nav>
+
+                <div class="header__logo">
+                    <div class="nav__suptitle">Fresh & Natural</div>
+                    <div class="nav__title">Smoothie</div>
+                </div>
+                <div class="burger">
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -73,26 +79,36 @@
             </div>
         </div>
         <div class="bg-block bg-block--stat">
-            <div class="stat">
-                <div class="stat__item">
-                    <img class="stat__image" src="images/icons/cherry.svg" alt="">
-                    <span class="stat__count">4832</span>
-                    <p class="stat__text">Cherry smoothies</p>
-                </div>
-                <div class="stat__item">
-                    <img class="stat__image" src="images/icons/apple.svg" alt="">
-                    <span class="stat__count">2531</span>
-                    <p class="stat__text">Apple smoothies</p>
-                </div>
-                <div class="stat__item">
-                    <img class="stat__image" src="images/icons/pineapple.svg" alt="">
-                    <span class="stat__count">1939</span>
-                    <p class="stat__text">Ananas smoothies</p>
-                </div>
-                <div class="stat__item">
-                    <img class="stat__image" src="images/icons/banana.svg" alt="">
-                    <span class="stat__count">7812</span>
-                    <p class="stat__text">Bananas smoothies</p>
+            <div class="container">
+                <div class="stat">
+                    <div class="stat__item">
+                        <div class="stat__item-inner">
+                            <img class="stat__image" src="images/icons/cherry.svg" alt="">
+                            <span class="stat__count">4832</span>
+                            <p class="stat__text">Cherry smoothies</p>
+                        </div>
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__item-inner">
+                            <img class="stat__image" src="images/icons/apple.svg" alt="">
+                            <span class="stat__count">2531</span>
+                            <p class="stat__text">Apple smoothies</p>
+                        </div>
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__item-inner">
+                            <img class="stat__image" src="images/icons/pineapple.svg" alt="">
+                            <span class="stat__count">1939</span>
+                            <p class="stat__text">Ananas smoothies</p>
+                        </div>
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__item-inner">
+                            <img class="stat__image" src="images/icons/banana.svg" alt="">
+                            <span class="stat__count">7812</span>
+                            <p class="stat__text">Bananas smoothies</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,13 +122,13 @@
             </div>
             <div class="team">
                 <div class="team__item-wrapper">
-                    <div class="team__item team__item--blue team__item--right">
+                    <img src="images/team/1.png" alt="" class="team__item-image">
+                    <div class="team__item">
                         <div class="team__item-inner">
-                            <img class="team__item-img" src="images/team/1.png" alt="">
-                            <h3 class="team__item-title">Ava Addams</h3>
+                            <h4 class="team__item-title">Ava Addams</h4>
                             <p class="team__item-subtitle">Designer</p>
-                            <p class="team__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui ante, cons non profit here.</p>
-                            <span class="team__item-socials">
+                            <p class="team__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati unde natus ducimus praesentium, aliquid sequi molestiae?</p>
+                            <span class="social">
                                 <i class="fab fa-facebook"></i>
                                 <i class="fab fa-youtube"></i>
                                 <i class="fab fa-instagram"></i>
@@ -122,13 +138,13 @@
                     </div>
                 </div>
                 <div class="team__item-wrapper">
-                    <div class="team__item team__item--green team__item--right">
+                    <img src="images/team/2.png" alt="" class="team__item-image">
+                    <div class="team__item">
                         <div class="team__item-inner">
-                            <img class="team__item-img" src="images/team/2.png" alt="">
-                            <h3 class="team__item-title">Ellen Marlen</h3>
+                            <h4 class="team__item-title">Ellen Marlen</h4>
                             <p class="team__item-subtitle">Designer</p>
-                            <p class="team__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui ante, cons non profit here.</p>
-                            <span class="team__item-socials">
+                            <p class="team__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati unde natus ducimus praesentium, aliquid sequi molestiae?</p>
+                            <span class="social">
                                 <i class="fab fa-facebook"></i>
                                 <i class="fab fa-youtube"></i>
                                 <i class="fab fa-instagram"></i>
@@ -138,13 +154,13 @@
                     </div>
                 </div>
                 <div class="team__item-wrapper team__item-wrapper--inverse">
-                    <div class="team__item team__item--green team__item--right">
-                        <div class="team__item-inner team__item-inner--inverse">
-                            <img class="team__item-img team__item-img--inverse" src="images/team/3.png" alt="">
-                            <h3 class="team__item-title">Rebecca Le</h3>
+                    <img src="images/team/3.png" alt="" class="team__item-image">
+                    <div class="team__item">
+                        <div class="team__item-inner">
+                            <h4 class="team__item-title">Rebecca Le</h4>
                             <p class="team__item-subtitle">Designer</p>
-                            <p class="team__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui ante, cons non profit here.</p>
-                            <span class="team__item-socials">
+                            <p class="team__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati unde natus ducimus praesentium, aliquid sequi molestiae?</p>
+                            <span class="social">
                                 <i class="fab fa-facebook"></i>
                                 <i class="fab fa-youtube"></i>
                                 <i class="fab fa-instagram"></i>
@@ -154,13 +170,13 @@
                     </div>
                 </div>
                 <div class="team__item-wrapper team__item-wrapper--inverse">
-                    <div class="team__item team__item--green team__item--right">
-                        <div class="team__item-inner team__item-inner--inverse">
-                            <img class="team__item-img team__item-img--inverse" src="images/team/4.png" alt="">
-                            <h3 class="team__item-title">Andy Shped</h3>
-                            <p class="team__item-subtitle">Drinker</p>
-                            <p class="team__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dui ante, cons non profit here.</p>
-                            <span class="team__item-socials">
+                    <img src="images/team/4.png" alt="" class="team__item-image">
+                    <div class="team__item">
+                        <div class="team__item-inner">
+                            <h4 class="team__item-title">Andy Shped</h4>
+                            <p class="team__item-subtitle">Designer</p>
+                            <p class="team__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati unde natus ducimus praesentium, aliquid sequi molestiae?</p>
+                            <span class="social">
                                 <i class="fab fa-facebook"></i>
                                 <i class="fab fa-youtube"></i>
                                 <i class="fab fa-instagram"></i>
@@ -242,12 +258,12 @@
             <div class="container">
                 <div class="footer__copy-inner">
                     <div class="footer__copy-text">Copyrights 2020. Ale Theme For WordPress</div>
-                    <div class="footer__copy-socials">
+                    <span class="social social--footer">
                         <i class="fab fa-facebook"></i>
                         <i class="fab fa-youtube"></i>
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-twitter"></i>
-                    </div>
+                    </span>
                 </div>
             </div>
         </div>

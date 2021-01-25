@@ -1,14 +1,21 @@
 .stat{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 50px;
 
 
     &__item{
+       width: 25%;
+    }
+
+    &__item-inner{
+        min-width: 190px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 120px;
+        text-align: center;
         color: @white;
 
         &:last-child{
@@ -17,6 +24,7 @@
     }
     
     &__image{
+        min-height: 140px;
         margin-bottom: 10px;
     }
 
@@ -30,5 +38,33 @@
     &__text{
         font-size: 20px;
         font-weight: 700;
+    }
+
+    // MEDIA
+    @media (max-width: @laptop){
+        padding: 0;
+        &__item{
+            width: 50%;
+            &:nth-child(n+2){
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    @media (max-width: @mobile){
+        &__item{
+            width: 100%;
+
+            margin-bottom: 40px;
+            // &:nth-child(n+2){
+            //     margin-bottom: 0;
+            // }
+            
+            
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
     }
 }

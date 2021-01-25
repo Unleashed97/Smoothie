@@ -1,0 +1,31 @@
+.burger{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    &__item{
+        display: block;
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: @pink;
+        margin-bottom: 8px;
+    }
+
+
+    // MEDIA
+    @media (max-width: @laptop){
+        &{
+            display: block;
+            &.active{
+                .burger__item{
+                    background-color: @white;
+                }
+            }
+        }
+    }
+}
