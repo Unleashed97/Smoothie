@@ -5,10 +5,10 @@ const burger = () => {
     const body = document.querySelector('body');
     
     burgerBtn.addEventListener('click', e => {
-        header.classList.add('active');
-        body.classList.add('no-scroll');
-        nav.classList.add('active');
-        burgerBtn.classList.add('active')
+        header.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+        nav.classList.toggle('active');
+        burgerBtn.classList.toggle('active');
     });
 
 

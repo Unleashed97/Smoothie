@@ -15,11 +15,7 @@ const rename = require('gulp-rename');
 
 // HTML
 const html = () => {
-    return src([
-        'app/**/*.html'
-        ], {
-            base: 'app'
-        })
+    return src('app/**/*.html')
         .pipe(htmlmin({
             removeComments: true,
             collapseWhitespace: true
@@ -30,17 +26,6 @@ const html = () => {
 
 // Styles
 const styles = () => {
-    // return src(['app/less/blocks/**/*.less'], { base: 'app' })
-    // .pipe(sourcemaps.init())
-    // .pipe(less())
-    // .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-    // .pipe(cleancss(({ level: { 1: { specialComments: 0}}})))
-    // .pipe(concat('style.min.css'))
-    // .pipe(sourcemaps.write())
-    // .pipe(dest('app/css/'))
-    // .pipe(dest('dist/css/'))
-    // .pipe(sync.stream())
-
     return src(['app/less/main.less'])
     .pipe(less())
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], cascade: false }))
@@ -56,7 +41,7 @@ const styles = () => {
 
 // Scripts
 const scripts = () => {
-    return src([ 'app/js/**/*.js' ], { base: 'app' })
+    return src(['app/js/script.js', 'app/js/**/*.js', '!app/js/script.min.js'])
     .pipe(concat('script.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js/'))
@@ -105,7 +90,7 @@ const cleandist = () => {
 const startwatch = () => {
     watch(['app/*.html', 'app/pages/*.html'], html);
     watch('app/**/*.less', styles);
-    watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
+    watch(['app/**/*.js', '!app/js/script.min.js'], scripts);
     watch(['app/images/**/*', 'app/fonts/**/*'], copy);
     watch('app/**/*.html').on('change', sync.reload);
 }
@@ -116,6 +101,7 @@ exports.scripts = scripts;
 exports.styles = styles;
 exports.copy = copy;
 exports.cleandist = cleandist;
-// exports.build = series(cleandist, html, styles, scripts, buildcopy);
 
-exports.default = parallel(html, styles, scripts, copy, server, startwatch);
+exports.build = series(cleandist, parallel(html, styles, scripts));
+
+exports.default = parallel(startwatch, server);
