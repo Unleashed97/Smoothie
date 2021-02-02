@@ -37,7 +37,7 @@ const styles = () => {
 
 // Scripts
 const scripts = () => {
-    return src(['app/js/script.js', 'app/js/**/*.js', '!app/js/script.min.js'])
+    return src(['app/js/script.js', 'app/js/preloader.js', 'app/js/**/*.js', '!app/js/script.min.js'])
     .pipe(concat('script.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js/'))
