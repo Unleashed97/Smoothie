@@ -3,15 +3,11 @@ const sync = require('browser-sync').create();
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 const less = require('gulp-less');
-// const less = require('postcss-less');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
 const del = require('del');
 const htmlmin = require('gulp-htmlmin');
 const rename = require('gulp-rename');
-// const sourcemaps = require('gulp-sourcemaps');
-// const postcss = require('postcss');
-// const babel = require('gulp-babel');
 
 // HTML
 const html = () => {

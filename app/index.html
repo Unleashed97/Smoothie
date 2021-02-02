@@ -10,7 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Smoothie</title>
 </head>
@@ -53,7 +53,7 @@
         </div>
         <div class="container">
             <div class="services">
-                <div class="services__col">
+                <div class="services__col" data-aos="fade-right">
                     <div class="services__item">
                         <h3 class="services__item-title">Triple Berry Smoothie</h3>
                         <p class="services__item-text">A smoothie is so much more than blended fruit. It's an art with
@@ -70,7 +70,7 @@
                             fresh and gives you a really cold smoothie to enjoy when done.</p>
                     </div>
                 </div>
-                <div class="services__col">
+                <div class="services__col" data-aos="fade-left">
                     <div class="services__item">
                         <h3 class="services__item-title">Add a thickener.</h3>
                         <p class="services__item-text">We use unsweetened greek yogurt in our smoothie, but peanut
@@ -95,28 +95,28 @@
                     <div class="stat__item">
                         <div class="stat__item-inner">
                             <img class="stat__image" src="images/icons/cherry.svg" alt="">
-                            <span class="stat__count">4832</span>
+                            <span class="stat__count" data-target="4832">0</span>
                             <p class="stat__text">Cherry smoothies</p>
                         </div>
                     </div>
                     <div class="stat__item">
                         <div class="stat__item-inner">
                             <img class="stat__image" src="images/icons/apple.svg" alt="">
-                            <span class="stat__count">2531</span>
+                            <span class="stat__count" data-target="2531">0</span>
                             <p class="stat__text">Apple smoothies</p>
                         </div>
                     </div>
                     <div class="stat__item">
                         <div class="stat__item-inner">
                             <img class="stat__image" src="images/icons/pineapple.svg" alt="">
-                            <span class="stat__count">1939</span>
+                            <span class="stat__count" data-target="1939">0</span>
                             <p class="stat__text">Ananas smoothies</p>
                         </div>
                     </div>
                     <div class="stat__item">
                         <div class="stat__item-inner">
                             <img class="stat__image" src="images/icons/banana.svg" alt="">
-                            <span class="stat__count">7812</span>
+                            <span class="stat__count" data-target="7832">0</span>
                             <p class="stat__text">Bananas smoothies</p>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                 <div class="section__subtitle">Meet our members</div>
             </div>
             <div class="team">
-                <div class="team__item-wrapper">
+                <div class="team__item-wrapper" data-aos="slide-right">
                     <img src="images/team/1.png" alt="" class="team__item-image">
                     <div class="team__item">
                         <div class="team__item-inner">
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item-wrapper">
+                <div class="team__item-wrapper" data-aos="slide-right">
                     <img src="images/team/2.png" alt="" class="team__item-image">
                     <div class="team__item">
                         <div class="team__item-inner">
@@ -166,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item-wrapper team__item-wrapper--inverse">
+                <div class="team__item-wrapper team__item-wrapper--inverse" data-aos="slide-left">
                     <img src="images/team/3.png" alt="" class="team__item-image">
                     <div class="team__item">
                         <div class="team__item-inner">
@@ -183,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item-wrapper team__item-wrapper--inverse">
+                <div class="team__item-wrapper team__item-wrapper--inverse" data-aos="slide-left">
                     <img src="images/team/4.png" alt="" class="team__item-image">
                     <div class="team__item">
                         <div class="team__item-inner">
@@ -206,7 +206,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__inner">
+            <div class="footer__inner" data-aos="slide-up">
                 <div class="footer__col">
                     <div class="footer__col-title">Opening Hours</div>
                     <div class="footer__col-content">
@@ -284,6 +284,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 
