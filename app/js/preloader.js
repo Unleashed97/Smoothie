@@ -1,5 +1,6 @@
 const preloader = () => {
     // document.body.classList.add('no-scroll');
+    document.querySelector('.preloader__image').classList.add('.filling');
     window.onload = () => {
         // preloaderBlock.classList.add('animation');
         setTimeout(() => {
